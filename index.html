@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" />
+<title>РОЗШУК ЗНИКЛОЇ ДИТИНИ</title>
+<script src="main.js"></script>
+
+</head>
+
+<body>
+<div class="karkas"> <!--контейнер, который будет в себе вмещать все содержимое. И он же будет распологаться по центру и будет фиксированной ширины -->
+	<div class="header"> <!--этот контейнер div будет содержать логотип, название и меню-->
+		<a class="logo" href="file:///D:/BrainBasket/final_project/doit.html"><img src="pictures/logogo.png" alt="Лого" /></a>
+		<a class="service" href="file:///D:/BrainBasket/final_project/doit.html"><img src="pictures/text_service.png" alt="service" /></a>
+		<ul class="menu">
+			<li><a href="about_project.html">Про проект</a></li>
+			<li><a href="to_do.html">Що робити?</a></li>
+			<li><a href="contact.html">Контакти</a></li>
+		</ul>
+	</div>
+	<div class="left_form">
+		  <p><b><ins>Крок 1</ins></b>  Скільки дитини років?</p><br>
+		  <input type="radio" name="age" value="1.84" id="a1" onclick="handleAge();">1,5<br><br>
+		  <input type="radio" name="age" value="2.8" id="a2" onclick="handleAge();">2-3<br><br>
+		  <input type="radio" name="age" value="3.4" id="a3" onclick="handleAge();">3-4<br><br>
+		  <input type="radio" name="age" value="3.8" id="a4" onclick="handleAge();">4-5<br><br>
+		  <input type="radio" name="age" value="4.3" id="a5" onclick="handleAge();">5-6<br><br>
+		  <input type="radio" name="age" value="4.9" id="a6" onclick="handleAge();">6-7</p><br>
+	</div>
+
+    <div class="right_form">
+		  <p><b><ins>Крок 2</ins></b>  Коли загубилася дитина?</p><br>
+		  <input type="radio" name="time" value="0.083" id="b1" onclick="handleTime();">5 хвилин тому<br><br>
+		  <input type="radio" name="time" value="0.25" id="b2" onclick="handleTime();">15 хвилин тому<br><br>
+		  <input type="radio" name="time" value="0.5" id="b3" onclick="handleTime();">30 хвилин тому<br><br>
+		  <input type="radio" name="time" value="0.75" id="b4" onclick="handleTime();">45 хвилин тому<br><br>
+		  <input type="radio" name="time" value="1" id="b5" onclick="handleTime();">1 годину тому<br><br>
+		  <input type="radio" name="time" value="1.5" id="b6" onclick="handleTime();">1,5 години тому</p><br>	
+	</div>
+	<div class="map">
+		<p><b><ins>Крок 3</ins></b>  Вкажіть місце на карті, де загубилася дитина</p><br>
+		<div id="my_map" style="width:755px; height:555px; display: block; margin: auto;">
+		</div>
+	</div>
+	<div class="footer"> <!--подвал сайта-->
+		<p>Technology Nation Berdyans'k © 2017</p>
+	</div>
+</div>
+</body>
+</html>
